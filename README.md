@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# od-api-doc
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 본 프로젝트는 웹에서 가져온 OpenAPI 3 파일을 React 기반 Swagger UI로 변환하여 API 문서를 제공합니다. <br>
+> 이는 서비스 코드에 침투적인 Swagger의 단점과 문서를 직접 작성해야 하는 RestDocs의 단점을 모두 해소하는 방식입니다. <br>
+> 각 프로젝트는 고유한 URI를 선언할 수 있으며, 프로젝트 내부에서 도메인별로 API 문서를 체계적으로 관리할 수 있습니다. <br>
+> OpenAPI 3 파일을 생성하는 방법은 [다음 링크](https://github.com/AkkeSun/restdocs-swagger-sample)를 참고하세요
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+## API 문서를 추가하는 방법
+1. public 에 프로젝트 이름의 폴더를 생성한 후 해당 폴더에 swagger yaml 파일을 추가합니다.
+2. src/component/project 에 프로젝트 이름의 js 파일을 하나 복사한 후 function 이름과 urls 를 변경합니다.
+3. 만약 매번 swagger yaml 파일 변경이 번거롭다면 yaml 파일을 각 서버에 배포한 후 src/component/project 에서 배포한 서버 url 을 작성하면 됩니다.
+4. src/App.js 의 project 객채에 프로젝트를 등록합니다.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br />
