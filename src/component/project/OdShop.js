@@ -1,5 +1,5 @@
 import React from 'react';
-import 'swagger-ui-react/swagger-ui.css';
+import 'swagger-ui-dist/swagger-ui.css';
 import SwaggerUIBundle from "swagger-ui-dist/swagger-ui-bundle"
 import SwaggerUIStandalonePreset from "swagger-ui-dist/swagger-ui-standalone-preset"
 
