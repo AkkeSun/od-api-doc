@@ -10,8 +10,9 @@ function OdShop({props}) {
 
       // -------- yaml 파일을 변경합니다 ---------
       urls: [
-        {url:'http://api.odlab.kr/docs/account-api.yaml', name: 'account'},
-        {url:'http://api.odlab.kr/docs/account-api.yaml', name: 'product'},
+        {url:'https://api.odlab.kr/accounts/docs/account-api.yaml', name: 'account'},
+        {url:'https://api.odlab.kr/products/docs/product-api.yaml', name: 'product'},
+        {url:'https://api.odlab.kr/orders/docs/order-api.yaml', name: 'order'},
       ],
 
       dom_id: '#swagger-ui',

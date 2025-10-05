@@ -17,5 +17,5 @@
 
 
 ### od-api-doc 배포 링크
-- https://docs.odlab.kr
-<br />
+- https://api.odlab.kr
+_<br />
